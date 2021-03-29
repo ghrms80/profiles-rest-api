@@ -9,6 +9,7 @@ router.register('profile', views.UserProfileViewSet)
 
 
 urlpatterns = [
+    path('login/', views.UserLoginApiView.as_view()),
     path('hello-view/', views.HelloApiView.as_view()),
     path('', include(router.urls)),
 ]
